@@ -1,0 +1,164 @@
+/* Basic Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(to right, #ff4c4c, #ff7676);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  background-color: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 85%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Layout */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 20px;
+}
+.hero-img img:hover {
+    transform: scale(1.2);
+}
+.hero-img img {
+  width: 350px;
+  border-radius: 10px;
+  border: 3px solid #ff4c4c;
+}
+.img-box {
+    width: 300px;         
+    overflow: hidden;
+}
+
+.btn {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #e84141;
+}
+
+/* HTTP Section */
+.http-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.http-flex img {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.http-flex img:hover {
+    transform: scale(1.2);
+}
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-section img {
+  width: 300px;
+  border-radius: 10px;
+}
+.about-section img:hover {
+    transform: scale(1.2);
+}
+/* Contact Section */
+.contact-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* Form */
+form {
+  background-color: #fff7f7;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff4c4c;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero, .about-section, .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img, .about-section img, .contact-img img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}

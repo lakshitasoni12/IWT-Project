@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lakshita's Blog - Client Server Architecture">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshita | Home</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/e/e2/Chitkara_University_Logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>Lakshita | Chitkara University</h1>
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Client–Server Architecture</h2>
+      <p>The client-server model divides tasks between service providers (servers) and service requesters (clients). The client sends a request, and the server processes and sends a response.</p>
+      <p><strong>Example:</strong> When you open a website, your browser (client) requests data from a web server that hosts the site.</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP" target="_blank" class="btn">Learn More</a>
+    </div>
+    <div class="hero-img">
+      <img src="client server.webp" alt="Client Server Model" class="img-box">
+    </div>
+  </section>
+
+  <section class="http">
+    <h2>Observation of HTTP Requests & Responses</h2>
+    <p>Using <strong>Browser Developer Tools</strong>, we can observe how clients communicate with servers using HTTP.</p>
+    <ol>
+      <li>Open <b>Developer Tools</b> (Press F12).</li>
+      <li>Go to the <b>Network</b> tab.</li>
+      <li>Reload the page to see requests and responses.</li>
+    </ol>
+
+    <ul>
+      <li>Request URL</li>
+      <li>HTTP Method (GET/POST)</li>
+      <li>Status Code (e.g., 200, 404)</li>
+      <li>Response Headers</li>
+    </ul>
+
+    <div class="http-flex">
+      <img src="Request-and-Response-Cycle.webp" alt="HTTP Request Response Diagram">
+      <div class="http-text">
+        <p>Each time you open a web page, several HTTP requests are sent for HTML, CSS, JavaScript, and image files. You can view details like timing, size, and response headers in the browser tools.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Lakshita | Chitkara University</p>
+</footer>
+</body>
+</html>
